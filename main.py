@@ -16,7 +16,7 @@ async def verify_api_key(api_key: str=Depends(api_key_header)):
     return api_key
 
 
-@app.get('/', tags=['check'])
+@app.get('/', tags=['General'])
 async def home(api_key: str=Depends(verify_api_key)):
     return {
         "message": "up & running"

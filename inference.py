@@ -1,8 +1,8 @@
 import pandas as pd
 from typing import List
-from .utils.request import PassengerData
-from .utils.response import PassengerPrediction, PredictionResponse
-from .utils.config import model, preprocessor
+from utils.request import PassengerData
+from utils.response import PassengerPrediction, PredictionResponse
+from utils.config import model, preprocessor
 
 
 def predict_survival(passengers: List[PassengerData]):
